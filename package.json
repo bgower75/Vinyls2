@@ -1,0 +1,29 @@
+{
+  "name": "vinyls2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgower75/vinyls2.git"
+  },
+  "keywords": [],
+  "author": "Belinda Gower",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgower75/vinyls2/issues"
+  },
+  "homepage": "https://github.com/bgower75/vinyls2#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0"
+  }
+}
