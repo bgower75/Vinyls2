@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 const server = require('./api')
 
 server.listen(3001, () => {

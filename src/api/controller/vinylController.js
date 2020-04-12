@@ -1,7 +1,10 @@
+// eslint-disable-next-line no-undef
 const express = require('express')
+// eslint-disable-next-line no-undef
 const mongoose = require('mongoose')
 const Router = express.Router
 const controller = new Router()
+// eslint-disable-next-line no-undef
 const vinylSchema = require('../schema/vinyl')
 
 const Vinyl = mongoose.model("Vinyl", vinylSchema)
@@ -12,6 +15,7 @@ controller.get('/', async (req, res) => {
         const foundVinyls = await Vinyl.find()
         if (foundVinyls.length === 0) {
             res.status(404).json({
+                // eslint-disable-next-line no-undef
                 "message": `No vinyls found ${err}`
             })
         } else {
@@ -63,7 +67,7 @@ controller.delete('./id:id', async (req, res) => {
     try {
         const foundVinyl = await Vinyl.findByIdAndDelete(req.params.id)
         res.status(200).json({
-            "message": `Vinyl ${req.params.id} found and deleted successfully`
+            "message": `Vinyl ${foundVinyl} found and deleted successfully`
         })
     }
     catch (err) {
@@ -102,4 +106,5 @@ controller.put('/id/:id', async (req, res) => {
     }
 })
 
+// eslint-disable-next-line no-undef
 module.exports = controller

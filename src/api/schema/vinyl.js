@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 const mongoose = require('mongoose')
 
 const vinylSchema = mongoose.Schema({
@@ -19,4 +20,5 @@ const vinylSchema = mongoose.Schema({
     }
 })
 
+// eslint-disable-next-line no-undef
 module.exports = vinylSchema
