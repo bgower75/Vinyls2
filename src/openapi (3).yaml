@@ -1,0 +1,162 @@
+openapi: 3.0.1
+info:
+  version: 1.0.0
+  title: "Vinyls 2"
+paths:
+  /api/vinyls:
+    get:
+      summary: "Get all Vinyls"
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/Vinyl"
+        404:
+          description: "No vinyls found ${err}"
+    post:
+      summary: "Create a Vinyl"
+      parameters:
+      - in: "path"
+        name: "body"
+        description: "Vinyl Body"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Vinyl"
+      requestBody:
+        description: "Create Vinyl Body"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Vinyl"
+      responses:
+        201:
+          description: "Created"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Vinyl"
+        400:
+          description: "Wrong format for creating a vinyl ${err}"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Vinyl"
+  /vinyls/id:
+    get:
+      summary: "Get a Vinyl by ID"
+      parameters:
+        - name: "vinylId"
+          in: "path"
+          description: "Vinyl ID"
+          required: true
+          schema:
+            type: "string"
+      responses:
+        200:
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Vinyl"
+        404:
+          description: "No vinyl found with id ${req.params.id} ${err}"
+          content:
+            application/json:
+              schema:
+                  $ref: "#/components/schemas/Vinyl"
+    put: 
+      summary: "Update viynl"
+      parameters:
+        - name: "name"
+          in: "path"
+          required: true
+          description: "New name"
+          schema:
+            type: "string"
+        - name: "artist"
+          in: "path"
+          required: true
+          description: "New artist"
+          schema:
+            type: "string"
+        - name: "year"
+          in: "path"
+          required: true
+          description: "New year"
+          schema:
+            type: "number"
+        - name: "genre"
+          in: "path"
+          required: true
+          description: "Genre"
+          schema:
+            type: "string"
+      requestBody:
+        description: "Update Vinyl Body"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Vinyl"
+      responses:
+        200:
+          description: "Successful"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Vinyl"
+        404:
+          description: "No vinyl with id ${req.params.id} found ${err}"
+        400:
+          description: "Wrong format for updating a vinyl ${err}"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Vinyl"
+    delete:
+      summary: "Delete a Vinyl by ID"
+      parameters:
+        - name: "vinylId"
+          in: "path"
+          description: "Vinyl to delete"
+          required: true
+          schema:
+            type: "string"
+      responses:
+        200:
+          description: "Vinyl ${req.params.id} found and deleted successfully"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Vinyl"
+        404:
+          description: "No vinyl with id ${req.params.id} found ${err}"
+components:
+  schemas:
+    Vinyl:
+      type: "object"
+      properties:
+        id:
+          type: "string"
+        name:
+          type: "string"
+          example: "Never Gonna Give You Up"
+        artist:
+          type: "string"
+          example: "Rick Astley"
+        year:
+          type: "number"
+          example: 1983
+        genre:
+          type: "string"
+          example: "pop"
+      required:
+        - name
+
