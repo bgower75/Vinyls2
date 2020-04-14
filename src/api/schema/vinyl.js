@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-undef
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const vinylSchema = mongoose.Schema({
     name: {
@@ -18,7 +17,6 @@ const vinylSchema = mongoose.Schema({
         type: String, 
         required: [true, 'Please enter the genre category of the vinyl']
     }
-})
+});
 
-// eslint-disable-next-line no-undef
-module.exports = vinylSchema
+module.exports = vinylSchema;
