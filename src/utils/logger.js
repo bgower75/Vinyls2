@@ -1,27 +1,29 @@
-const log4js = require('log4js');
-const logger = log4js.getLogger();
+const winston = require('winston');
 
-log4js.configure ({
-    appenders: { 
-            fileAppenderError: { type: 'file', filename: './logs/errorLog.log'},
-            fileAppenderWarn: { type: 'file', filename: './logs/warningLog.log'},
-            fileAppenderInfo: { type: 'file', filename: './logs/infoLog.log'},
-            console: { type: 'console'}
-    },
-    categories: { 
-        default: { appenders: ['fileAppender, console'], level: 'error' },
-        // warn: { appenders: ['fileAppenderWarn'], level: 'warn'},
-        // error: {appenders: ['fileAppenderError'], level: 'error'},
-        // info: {appenders: ['fileAppenderInfo'], level: 'info'}
-    }
-});
+const logger = winston.createLogger({
+    level: 'info',
+    format: winston.format.json(),
+    defaultMeta: { service: 'user-service' },
+    transports: [
+      //
+      // - Write to all logs with level `info` and below to `combined.log` 
+      // - Write all logs error (and below) to `error.log`.
+      //
+      new winston.transports.File({ filename: './logs/errorLog.log', level: 'error' }),
+      new winston.transports.File({ filename: './logs/warnLog.log', level: 'warn' }),
+      new winston.transports.File({ filename: './logs/infoLog.log', level: 'info'})
+    ]
+  });
 
-logger.level = 'debug';
-
-logger.debug('Trace, log4js');
-logger.debug('Debug, log4js');
-logger.info('Hello, log4js');
-logger.warn('Warn, log4js');
-logger.error('Error, log4js');
-
+// const logs = winston.createLogger(logger);
+if (process.env.NODE_ENV !== 'production') {
+    logger.add(new winston.transports.Console({
+      format: winston.format.simple()
+    }));
+  }
 module.exports = logger;
+
+// logger.info('Hello, MR Winston!');
+// logger.debug('debugging here');
+// logger.error('logging an error');
+// logger.warn('logging a warning here');

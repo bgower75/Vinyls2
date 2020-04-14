@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
+const logger = require('../utils/logger');
+
 
 mongoose.connect('mongodb://localhost:27015/vinyls', {
     useNewUrlParser: true, useUnifiedTopology: true
@@ -10,10 +12,10 @@ mongoose.connect('mongodb://localhost:27015/vinyls', {
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json());
     app.use('/api', require('./routes/router'));
-    console.log("We've reached the database");
+    logger.info("We've reached the database");
 })
 .catch((err) => {
-    console.log(`The error is ${err}`);
+    logger.error(`The error is ${err}`);
 });
 
 module.exports = app;

@@ -2,9 +2,10 @@
 const express = require('express');
 const Router = express.Router;
 const router = new Router();
+const logger = require('../../utils/logger');
 
 router.use((req, res, next) => {
-    console.log("We're on the routers page");
+    logger.info("We're on the routers page");
     next();
 });
 

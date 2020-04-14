@@ -1,12 +1,8 @@
-import Logger from '../../utils/logger'
 const express = require('express');
 const mongoose = require('mongoose');
 const Router = express.Router;
 const controller = new Router();
-const log = require('../../utils/logWinston')
-const logger = winston.createLogger(log);
-// const logger = log4js.getLogger();
-logger.debug()
+const logger = require('../../utils/logger');
 
 const vinylSchema = require('../schema/vinyl');
 
@@ -17,6 +13,7 @@ controller.get('/', async (req, res) => {
     try {
         const foundVinyls = await Vinyl.find();
         if (foundVinyls.length === 0) {
+            logger.error(`No vinyls found`);
             res.status(404).json({
                 // eslint-disable-next-line no-undef
                 "message": `No vinyls found ${err}`
@@ -26,6 +23,7 @@ controller.get('/', async (req, res) => {
         }
     }
     catch (err) {
+        logger.error(`No vinyls found ${err}`);
         res.status(404).json({
             "message": `No vinyls found ${err}`
         });
@@ -39,9 +37,9 @@ controller.get('/id/:id', async (req, res) => {
         res.send(foundVinyl);
     }
     catch (err) {
+        logger.error(`No vinyl found with id ${req.params.id} ${err}`);
         res.status(404).json({
-            logger.info(`No vinyl found with id ${req.params.id} ${err}`)
-            // "message": `No vinyl found with id ${req.params.id} ${err}`
+            "message": `No vinyl found with id ${req.params.id} ${err}`
         });
     }
 });
@@ -56,6 +54,7 @@ controller.post('/', (req, res) => {
     });
     newVinyl.validate((err) => {
         if(err) {
+            logger.error(`Wrong format for creating a vinyl ${err}`);
             res.status(400).json({
                 "message": `Wrong format for creating a vinyl ${err}`
             });
@@ -70,11 +69,13 @@ controller.post('/', (req, res) => {
 controller.delete('/id:id', async (req, res) => {
     try {
         const foundVinyl = await Vinyl.findByIdAndDelete(req.params.id);
+        logger.info(`Vinyl ${foundVinyl} found and deleted successfully`);
         res.status(200).json({
             "message": `Vinyl ${foundVinyl} found and deleted successfully`
         });
     }
     catch (err) {
+        logger.error(`No vinyl with id ${req.params.id} found ${err}`);
         res.status(404).json({
             "message": `No vinyl with id ${req.params.id} found ${err}`
         });
@@ -93,6 +94,7 @@ controller.put('/id/:id', async (req, res) => {
     try {
         foundVinyl.validate((err) => {
             if(err) {
+                logger.error(`Wrong format for updating a vinyl ${err}`);
                 res.status(400).json({
                     "message": `Wrong format for updating a vinyl ${err}`
                 });
@@ -104,6 +106,7 @@ controller.put('/id/:id', async (req, res) => {
     }
 
     catch (err) {
+        logger.error(`No vinyl with id ${req.params.id} found ${err}`);
         res.status(404).json({
             "message": `No vinyl with id ${req.params.id} found ${err}`
         });
