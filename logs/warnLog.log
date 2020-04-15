@@ -1,1 +1,2 @@
 {"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service"}
+{"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service","timestamp":"15-04-2020 09:04:21"}
