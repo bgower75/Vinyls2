@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const vinylSchema = mongoose.Schema({
     name: {
@@ -17,6 +17,6 @@ const vinylSchema = mongoose.Schema({
         type: String, 
         required: [true, 'Please enter the genre category of the vinyl']
     }
-})
+});
 
-module.exports = vinylSchema
+module.exports = vinylSchema;
