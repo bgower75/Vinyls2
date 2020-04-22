@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
 const logger = require('../utils/logger');
+const config = require('dotenv').config();
 
-
-mongoose.connect('mongodb://localhost:27015/vinyls', {
+mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true, useUnifiedTopology: true
 })
 .then(() => {

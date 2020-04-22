@@ -3,3 +3,38 @@
 {"message":"We've reached the database","level":"info","service":"user-service","timestamp":"15-04-2020 09:03:57"}
 {"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"15-04-2020 09:04:21"}
 {"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service","timestamp":"15-04-2020 09:04:21"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"22-04-2020 08:09:52"}
+{"message":"The error is MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27015","level":"error","service":"user-service","timestamp":"22-04-2020 08:10:22"}
+{"message":"Listening to server on port undefined","level":"info","service":"user-service","timestamp":"22-04-2020 08:14:55"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"22-04-2020 08:14:55"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"22-04-2020 08:17:29"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"22-04-2020 08:17:29"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:17:37"}
+{"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service","timestamp":"22-04-2020 08:17:37"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:17:42"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"22-04-2020 08:18:32"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"22-04-2020 08:18:32"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"22-04-2020 08:19:14"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"22-04-2020 08:19:14"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"22-04-2020 08:19:29"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"22-04-2020 08:19:29"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:19:36"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:19:48"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:20:03"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:20:07"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:20:16"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:20:24"}
+{"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service","timestamp":"22-04-2020 08:20:24"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:20:54"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:21:12"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:21:29"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:21:59"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:22:06"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:22:56"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:23:19"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:23:39"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:27:14"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:28:59"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:32:35"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:32:45"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:32:53"}

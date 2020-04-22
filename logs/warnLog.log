@@ -1,2 +1,5 @@
 {"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service"}
 {"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service","timestamp":"15-04-2020 09:04:21"}
+{"message":"The error is MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27015","level":"error","service":"user-service","timestamp":"22-04-2020 08:10:22"}
+{"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service","timestamp":"22-04-2020 08:17:37"}
+{"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service","timestamp":"22-04-2020 08:20:24"}
