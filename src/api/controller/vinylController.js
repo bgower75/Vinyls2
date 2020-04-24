@@ -66,7 +66,7 @@ controller.post('/', (req, res) => {
 });
 
 //Delete a vinyl by id
-controller.delete('/id:id', async (req, res) => {
+controller.delete('/id/:id', async (req, res) => {
     try {
         const foundVinyl = await Vinyl.findByIdAndDelete(req.params.id);
         logger.info(`Vinyl ${foundVinyl} found and deleted successfully`);

@@ -38,3 +38,51 @@
 {"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:32:35"}
 {"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:32:45"}
 {"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"22-04-2020 08:32:53"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"23-04-2020 08:16:09"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"23-04-2020 08:16:09"}
+{"message":"Listening to server on port 3003","level":"info","service":"user-service","timestamp":"23-04-2020 08:21:35"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"23-04-2020 08:21:35"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:21:40"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"23-04-2020 08:38:14"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"23-04-2020 08:38:14"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"23-04-2020 08:39:54"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"23-04-2020 08:39:54"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:39:58"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:40:02"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"23-04-2020 08:40:38"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"23-04-2020 08:40:38"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:40:44"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:40:48"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:41:29"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:41:52"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"23-04-2020 08:42:30"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"23-04-2020 08:42:30"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:42:34"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"23-04-2020 08:42:40"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"23-04-2020 08:42:40"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:55:49"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:58:02"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:58:02"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 08:58:36"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:06:08"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:07:33"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:07:38"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:07:43"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:08:01"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:11:16"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:15:11"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:16:51"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:17:04"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:17:24"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:18:26"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:20:47"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:21:37"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:23:03"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:23:19"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:24:18"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"23-04-2020 09:24:44"}
+{"message":"Listening to server on port 3001","level":"info","service":"user-service","timestamp":"24-04-2020 12:41:52"}
+{"message":"We've reached the database","level":"info","service":"user-service","timestamp":"24-04-2020 12:41:53"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"24-04-2020 12:42:06"}
+{"message":"We're on the routers page","level":"info","service":"user-service","timestamp":"24-04-2020 12:42:21"}
+{"message":"Vinyl { _id: 5e9309102dff0ce7e5f641fc,\n  name: '',\n  artist: '',\n  year: 1989,\n  genre: '',\n  __v: 0 } found and deleted successfully","level":"info","service":"user-service","timestamp":"24-04-2020 12:42:21"}
