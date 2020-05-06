@@ -3,3 +3,6 @@
 {"message":"The error is MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27015","level":"error","service":"user-service","timestamp":"22-04-2020 08:10:22"}
 {"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service","timestamp":"22-04-2020 08:17:37"}
 {"message":"Wrong format for creating a vinyl ValidationError: genre: Please enter the genre category of the vinyl","level":"error","service":"user-service","timestamp":"22-04-2020 08:20:24"}
+{"message":"The error is SyntaxError: Unexpected identifier","level":"error","service":"user-service","timestamp":"06-05-2020 08:26:06"}
+{"message":"The error is SyntaxError: Unexpected token )","level":"error","service":"user-service","timestamp":"06-05-2020 08:26:45"}
+{"message":"The error is Error: Cannot find module 'queryString'","level":"error","service":"user-service","timestamp":"06-05-2020 08:36:14"}

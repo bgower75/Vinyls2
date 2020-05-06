@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const Router = express.Router;
 const controller = new Router();
 const logger = require('../../utils/logger');
+const queryString = require('querystring');
 
 const vinylSchema = require('../schema/vinyl');
 
@@ -42,6 +43,24 @@ controller.get('/id/:id', async (req, res) => {
             "message": `No vinyl found with id ${req.params.id} ${err}`
         });
     }
+});
+
+//Find a vinyl by artist using query param
+controller.get('/', async (req, res) => {
+
+    // Access the provided query parameters
+    let artist = queryString.parse(req.query.artist);
+
+    // let vinyls = await Vinyl.findAll({artist: artist}).toArray(function(err, result) {
+
+    //     result.send(vinyls);
+    // });
+    res.send(artist);
+
+    // Return the articles to the rendering engine
+    // res.send('index', {
+    //     vinyls: vinyls
+    // });
 });
 
 //Create a vinyl entry
